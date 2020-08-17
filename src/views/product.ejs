@@ -1,0 +1,22 @@
+<%- include('partials/_header') %>
+
+<main>
+    <div class="contenedor">
+        <div class="detail-product seccion">
+            <div class="galeria">
+                <img src="<%= product.img %>" alt="">
+            </div>
+            <div class="info-product">
+                <p><%= product.name %></p>
+                <p><%= product.price %></p>
+                <a href="#">Guia de Tallas</a>
+                <div class="product-qty">
+                    <button id="minus">-</button>
+                    <input type="number">
+                    <button id="plus">+</button>
+                </div>
+                <a class="boton boton-negro" href="">Añadir a Carrito</a>
+            </div>
+        </div>
+    </div>
+</main>

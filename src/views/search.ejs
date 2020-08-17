@@ -1,0 +1,18 @@
+<%- include('partials/_header') %>
+
+<section class="productos contenedor seccion">
+    <h2 class="fw300 centrar-texto">Productos</h2>
+    <div class="contenedor-productos">
+        <% for(let i = 0; i < reg.length; i++) { %>
+            <div class="card-producto">
+                <img src="<%= reg[i].img %>" alt="">
+                <div class="contenido-producto">
+                    <p class="categoria"><%= reg[i].category %></p>
+                    <h3><%= reg[i].name %></h3>
+                    <p class="precio"><%= reg[i].price %></p>
+                    <a href="/product/<%= reg[i]._id %>" class="boton boton-negro">Comprar</a>
+                </div>
+            </div>
+        <% } %>
+    </div>
+  </section>

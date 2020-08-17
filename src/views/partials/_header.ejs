@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Tienda Online</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor centrar-texto site-header">
+            <p>Envío Gratis en compras superiores a $699 <span><a href="#">Ver Productos</a></span></p>
+        </div>
+        <div class="contenedor c-flex">
+            <div class="secc-header">
+                <a href="/">    
+                    <img class="logo" src="/img/logo-web-quarry.jpg" alt="">
+                </a>
+            </div>
+            <div class="secc-header buscador">
+                <form action="/search" method="POST">
+                    <input type="text" name="valor" placeholder="Buscar producto">
+                    <button type="submit" class="boton boton-negro">Enviar</button>
+                </form>
+            </div>
+            <div class="secc-header c-cart-flex">
+                <div class="secc-cart centrar-texto mi-cuenta">
+                    <p>Mi Cuenta</p>
+                </div>
+                <div class="secc-cart carrito">
+                    <img src="/img/shopping-cart.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <nav class="contenedor">
+            <ul class="navegacion c-nav-flex">
+                <li class="elemento-navegacion centrar-texto"><a href="/category/hombre">Hombre</a></li>
+                <li class="elemento-navegacion centrar-texto"><a href="/category/mujer">Mujer</a></li>
+            </ul>
+        </nav>
+    </header>
