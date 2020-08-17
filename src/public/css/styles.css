@@ -7,7 +7,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    border: 1px solid green;
 }
     
 body {
@@ -94,7 +93,7 @@ h4 {
 
 /* --- HEADER --- */
 
-.site-header p {
+.site-header p{
     margin: 0;
 }
 
@@ -106,6 +105,44 @@ h4 {
 
 .secc-header {
     flex: 0 0 calc(33.3% - 1rem);
+}
+
+.buscador-flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador-input {
+    flex: 0 0 calc(50% - 1rem);
+    display: inline-block;
+}
+
+
+
+.buscador-btn {
+    flex: 0 0 calc(50% - 1rem);
+    display: none;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    background: cornflowerblue;
+    font-size: 1.8rem;
+    color: white;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+    .buscador-btn {
+        display: inline-block;
+    } 
 }
 
 .c-cart-flex {
@@ -120,13 +157,23 @@ h4 {
     padding: 0;
 }
 
-.secc-cart.carrito {
-    min-width: 10%;
-    flex: 0 0 calc(20% - 3rem);
+.secc-cart.mi-cuenta {
+    display: none;
 }
 
-.secc-cart.mi-cuenta {
-    flex: 0 0 calc(80% - 3rem);
+.secc-cart.carrito {
+    flex: 0 0 15%;
+}
+
+@media (min-width: 768px) {
+    .secc-cart.mi-cuenta {
+        display: block;
+        flex: 0 0 calc(85% - 1rem);
+    }
+    .secc-cart.carrito {
+        min-width: 10%;
+        flex: 0 0 calc(15% - 1rem);
+    }
 }
 
 /* --- NAVEGACION ---- */
@@ -147,6 +194,12 @@ h4 {
     margin: 0;
     padding: 0;
     flex: 0 0 calc(40% - 1rem);
+}
+
+.elemento-navegacion a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
 }
 
 /* --- SECCION PRODUCTOS -- */
